@@ -5,13 +5,9 @@ Minimal client library for interacting with the [CrowdFlower](http://www.crowdfl
 
 ## Installation
 
-Install from PyPI:
-
-    easy_install crowdflower
-
 Or install the latest version GitHub:
 
-    git clone https://github.com/chbrown/crowdflower.git
+    git clone https://github.com/Giphy/crowdflower.git
     cd crowdflower
     python setup.py develop
 

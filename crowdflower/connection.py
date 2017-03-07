@@ -63,7 +63,7 @@ class Connection(object):
             # but I'm pretty sure that's the only error .json() might raise, so we don't
             # to type-match it.
             return res.json()
-        except Exception, err:
+        except Exception as err:
             raise CrowdFlowerJSONError(req, res, err)
 
     # def grequest(self, path, method='GET', params=None, data=None, headers=None):

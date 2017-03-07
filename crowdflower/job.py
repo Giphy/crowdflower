@@ -2,7 +2,10 @@ import csv
 import json
 import zipfile
 from pprint import pformat
-from cStringIO import StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 import grequests
 
 from crowdflower import logger

@@ -11,7 +11,3 @@ __version__ = pkg_resources.get_distribution('crowdflower').version
 
 import logging
 logger = logging.getLogger('crowdflower')
-
-
-# import helper
-from connection import Connection

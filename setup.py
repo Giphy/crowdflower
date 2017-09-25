@@ -1,5 +1,9 @@
+import codecs
 from setuptools import setup, find_packages
 
+with codecs.open('README.rst', encoding='utf-8-sig') as f:
+    LONG_DESCRIPTION = f.read()
+    
 setup(
     name='crowdflower',
     version='0.0.5',
@@ -8,7 +12,7 @@ setup(
     url='https://github.com/chbrown/crowdflower',
     keywords='crowdflower crowdsourcing api client',
     description='Crowdflower API - Python Client',
-    long_description=open('README.rst').read(),
+    long_description=LONG_DESCRIPTION,
     license=open('LICENSE').read(),
     packages=find_packages(),
     include_package_data=True,

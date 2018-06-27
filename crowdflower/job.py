@@ -6,7 +6,6 @@ try:
     from StringIO import StringIO
 except ImportError:
     from io import StringIO
-# import grequests
 
 from crowdflower import logger
 
@@ -107,8 +106,6 @@ class Job(object):
     def clear_units(self, parallel=20):
         reqs = (self._connection.request('/jobs/%s/units/%s' % (self.id, unit_id), method='DELETE')
             for unit_id in self.units.keys())
-        # for response in grequests.imap(reqs, size=parallel):
-        #     yield response
         for response in reqs:
             yield response
 

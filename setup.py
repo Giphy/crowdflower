@@ -23,7 +23,7 @@ setup(
     ],
     install_requires=[
         'requests>=2.0.0',
-        'grequests',
+        # 'grequests',
     ],
     entry_points={
         'console_scripts': [

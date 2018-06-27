@@ -22,8 +22,7 @@ setup(
         'License :: OSI Approved :: MIT License',
     ],
     install_requires=[
-        'requests>=2.0.0',
-        'grequests',
+        'requests>=2.0.0'
     ],
     entry_points={
         'console_scripts': [
